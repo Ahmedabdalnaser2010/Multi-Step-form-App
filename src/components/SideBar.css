@@ -1,0 +1,139 @@
+:root {
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+.sideBar {
+    background-image: url(../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 305px;
+
+}
+
+@media (max-width: 767px) {
+
+    /* main Page  */
+    .appCont {
+        background-color: var(--Magnolia);
+        max-width: 100% !important;
+        height: 90vh !important;
+        margin-top: 0 !important;
+    }
+
+    /* sidebar */
+    .sideBar {
+        background-image: url(../assets/images/bg-sidebar-mobile.svg);
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+    }
+
+    .sideBar ul {
+        flex-direction: row !important;
+        justify-content: center;
+        column-gap: 25px;
+    }
+
+    .sideBar ul li>.title {
+        display: none !important;
+    }
+
+
+    /* general  */
+    .mainCont,.totalCost {
+        position: absolute;
+        top: 12%;
+        width: 90% !important;
+        height: 70%;
+        background-color: WHITE;
+        border-radius: 10px;
+        padding: 1.5em;
+
+    }
+
+   .totalCost{
+    height: fit-content;
+   }
+
+    form {
+        height: fit-content !important;
+        margin-top: 0 !important;
+        row-gap: 10px;
+    }
+
+    form .inputsCon {
+        margin-bottom: 0.5em !important;
+    }
+
+    form .inputsCon label {
+        font-weight: 500 !important;
+    }
+
+    .allButton {
+
+        position: fixed;
+        bottom: 1em;
+        left: 5%;
+        width: 90% !important;
+    }
+
+    /* select plan */
+
+    .selectors {
+
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        height: fit-content !important;
+        row-gap: 15px ;
+    }
+
+    .totalCost .selectors{
+       flex-wrap: nowrap;
+        
+    }
+
+    .totalCost .total span:last-of-type{
+
+        font-size: 1.1em !important;
+
+    }
+
+    .selectors label{
+        flex-direction: row !important;
+        align-items: center;
+        column-gap: 20px ;
+        justify-content: start !important;
+        min-height: 50px !important;
+        height: 70px !important;
+        width: 100% !important;
+    }
+
+    .selectors .pick{
+        justify-content: space-between !important;
+        height: 80px !important;
+    }
+
+    .selectors label img{
+        margin-bottom: 0 !important;
+    }
+
+    .selectors .title{
+        justify-content: center !important;
+    }
+
+    .selectors label span{
+        font-size: 0.85em !important;
+    }
+}
