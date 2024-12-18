@@ -23,7 +23,7 @@ function App() {
         <Route path='/PickAdd' element={<PickAdd onlineMon={'+$1/mo'} onlineYr={'+$10/yr'} storageMon={'+$2/mo'} storageYr={'+$20/yr'} profileMon={'+$2/mo'} profileYr={'+$20/yr'} />} />
         <Route path='/Finish' element={<Finish arcadeMon={'$9/mo'} arcadeyr={'$90/yr'} advMon={'$12/mo'} advYr={'$120/yr'} proMon={'$15/mo'} proYr={'$150/yr'} onlineMon={'+$1/mo'} onlineYr={'+$10/yr'} storageMon={'+$2/mo'} storageYr={'+$20/yr'} profileMon={'+$2/mo'} profileYr={'+$20/yr'} />} />
         <Route path='/Thanks' element={<Thanks />} />
-        <Route path='/Multi-Step-form-App' element={<Navigate to="/" replace />} />
+{/*         <Route path='/Multi-Step-form-App' element={<Navigate to="/" replace />} /> */}
       </Routes>
 
     </div>
